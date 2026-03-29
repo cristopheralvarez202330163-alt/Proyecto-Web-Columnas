@@ -12,171 +12,83 @@
         .eng-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
         .section-card { transition: all 0.3s ease; }
         .section-card:hover { border-color: #3b82f6; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-        audio::-webkit-media-controls-panel { background-color: #f1f5f9; }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
-    <header class="eng-gradient text-white py-24 px-6 shadow-2xl relative overflow-hidden text-center">
-        <div class="absolute inset-0 opacity-5">
-            <svg width="100%" height="100%"><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/></pattern><rect width="100%" height="100%" fill="url(#grid)" /></svg>
-        </div>
-        
-        <div class="max-w-5xl mx-auto relative z-10">
-            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter uppercase italic">
-                Estabilidad y Equilibrio en Columnas
-            </h1>
-            <p class="text-lg md:text-xl text-blue-200 font-light max-w-2xl mx-auto leading-relaxed opacity-80 uppercase tracking-widest">
-                Investigación Técnica de Ingeniería Mecánica
-            </p>
+    <header class="eng-gradient text-white py-16 px-6 text-center shadow-2xl">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 italic">ESTABILIDAD Y EQUILIBRIO</h1>
+            <p class="text-blue-300 font-mono text-sm md:text-base tracking-widest uppercase">Investigación de Ingeniería Mecánica • USAC</p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-16">
+    <main class="max-w-5xl mx-auto px-6 -mt-10 pb-20">
         
-        <section class="mb-20">
-            <div class="flex items-center mb-8 border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-widest text-blue-800">01. Introducción</h2>
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border border-slate-200">
+            <h2 class="text-xl font-bold mb-6 flex items-center text-slate-800">
+                <span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">01</span>
+                RESUMEN DE AUDIO
+            </h2>
+            <div class="flex flex-col items-center">
+                <audio controls class="w-full max-w-2xl mb-4">
+                    <source src="audio_investigacion.m4a" type="audio/mp4">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <p class="text-[10px] text-slate-400 font-mono uppercase tracking-widest">Formato: NotebookLM Audio Pipeline</p>
             </div>
-            <div class="grid md:grid-cols-2 gap-10 text-slate-700 leading-relaxed">
-                <p class="text-lg">
-                    La investigación analiza la **estabilidad estructural** como la capacidad de mantener la configuración geométrica bajo cargas de compresión axial. El fenómeno central es el **pandeo**, una inestabilidad lateral que puede ocurrir mucho antes de alcanzar el límite de fluencia del material.
-                </p>
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <h4 class="font-bold text-slate-500 mb-4 uppercase text-[10px] tracking-[0.2em]">Criterios de Equilibrio</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span> <strong>Estable:</strong> Carga $P < P_{cr}$</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> <strong>Neutro:</strong> Carga $P = P_{cr}$</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span> <strong>Inestable:</strong> Carga $P > P_{cr}$</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <section class="mb-20">
-            <div class="flex items-center mb-8 border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-widest text-blue-800">02. Fundamentos de la Investigación</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 section-card">
-                    <div class="text-blue-600 mb-4 text-2xl"><i class="fas fa-ruler-combined"></i></div>
-                    <h3 class="font-bold text-slate-800 mb-2 uppercase text-xs tracking-wider">Relación de Esbeltez ($\lambda$)</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        Es el cociente entre la longitud efectiva y el radio de giro mínimo. Define si una columna se comporta como "larga" (Euler) o "intermedia" (Johnson). A mayor esbeltez, menor es la carga crítica.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 section-card">
-                    <div class="text-blue-600 mb-4 text-2xl"><i class="fas fa-project-diagram"></i></div>
-                    <h3 class="font-bold text-slate-800 mb-2 uppercase text-xs tracking-wider">Efectos de Segundo Orden</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        Conocidos como efectos $P-\Delta$, consideran que la carga axial genera momentos adicionales debido a la deflexión lateral, reduciendo la rigidez efectiva de la estructura.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 section-card">
-                    <div class="text-blue-600 mb-4 text-2xl"><i class="fas fa-microchip"></i></div>
-                    <h3 class="font-bold text-slate-800 mb-2 uppercase text-xs tracking-wider">Método de Splines</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        A diferencia del análisis clásico, el uso de Splines Generalizados permite modelar variaciones de inercia y condiciones de carga no uniformes con alta precisión matemática.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-20">
-            <div class="flex items-center mb-8 border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-widest text-blue-800">03. Metodología Comparada</h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 section-card">
-                    <h3 class="font-bold text-blue-900 mb-2 uppercase text-xs tracking-wider">Teoría Elástica de Euler</h3>
-                    <p class="text-sm text-slate-500 mb-6 italic">Ecuación fundamental para la carga crítica de columnas esbeltas.</p>
-                    <div class="bg-slate-50 p-6 rounded-xl font-mono text-center text-xl border border-slate-100">
-                        $P_{cr} = \frac{\pi^2 EI}{(KL)^2}$
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 section-card">
-                    <h3 class="font-bold text-slate-700 mb-2 uppercase text-xs tracking-wider">Fórmula Parabólica de Johnson</h3>
-                    <p class="text-sm text-slate-500 mb-6 italic">Corrección para materiales que alcanzan la fluencia inelástica.</p>
-                    <div class="bg-slate-50 p-6 rounded-xl font-mono text-center text-xl border border-slate-100 text-slate-600">
-                        $\sigma_{cr} = S_y [1 - \frac{S_y \lambda^2}{4\pi^2 E}]$
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-20 bg-slate-100 rounded-3xl p-10 border border-slate-200">
-            <h2 class="text-xl font-black mb-8 text-slate-800 uppercase italic">04. Aplicación Práctica</h2>
+        <div class="section-card bg-white rounded-2xl shadow-lg p-8 mb-12 border border-slate-200">
+            <h2 class="text-xl font-bold mb-8 italic text-slate-800 tracking-tight">04. APLICACIÓN PRÁCTICA</h2>
+            
             <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="text-sm space-y-2">
-                    <p><strong>Configuración:</strong> Columna de acero $20 \times 50 \text{ mm}$, $L=1.0 \text{ m}$.</p>
-                    <p><strong>Condiciones:</strong> Empotrada en ambos extremos ($K=0.5$).</p>
-                    <p class="text-blue-700 italic font-medium underline">Resultado: Carga Permisible = 127.05 kN (F.S. 1.5)</p>
+                <div class="space-y-4">
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong class="text-slate-900">Configuración:</strong> Columna de acero $20 \times 50 \text{ mm}$, $L = 1.0 \text{ m}$.<br>
+                        <strong class="text-slate-900">Condiciones:</strong> Empotrada en ambos extremos ($K = 0.5$).
+                    </p>
+                    <p class="text-blue-600 font-semibold italic border-l-4 border-blue-600 pl-4">
+                        Resultado: Carga Permisible = 127.05 kN (F.S. 1.5)
+                    </p>
                 </div>
-                <div class="bg-blue-900 text-white p-6 rounded-xl text-center shadow-lg">
-                    <span class="text-[10px] uppercase tracking-[0.3em] opacity-60">Carga Crítica</span>
-                    <div class="text-4xl font-bold">190.58 kN</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-20">
-            <div class="flex flex-col md:flex-row gap-6 items-stretch">
                 
-                <div class="flex-1 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-center">
-                    <h2 class="text-[10px] font-bold mb-4 text-slate-500 uppercase tracking-[0.2em] text-center">Resumen Auditivo</h2>
-                    <audio controls class="w-full">
-                        <source src="audio_investigacion.mp3.m4a" type="audio/x-m4a">
-                        <source src="audio_investigacion.mp3.m4a" type="audio/mpeg">
-                        Tu navegador no soporta el audio.
-                    </audio>
-                    <p class="text-[8px] text-slate-400 mt-2 text-center uppercase tracking-tighter italic">Archivo: audio_investigacion.mp3.m4a</p>
+                <div class="bg-slate-900 rounded-xl p-8 text-center border-b-4 border-blue-500 shadow-inner">
+                    <span class="text-slate-400 text-[10px] uppercase tracking-[0.3em] block mb-2">Carga Crítica</span>
+                    <div class="text-white text-5xl font-black">190.58 kN</div>
                 </div>
-
-                <div class="flex-1 flex items-stretch">
-                    <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="w-full flex items-center justify-center px-8 py-6 bg-blue-700 text-white text-sm font-bold rounded-3xl hover:bg-blue-600 transition-all shadow-lg group">
-                        <div class="text-center">
-                            <i class="fas fa-file-pdf mb-2 text-2xl group-hover:scale-110 transition-transform"></i>
-                            <span class="block uppercase tracking-wider">Descargar Investigación Completa</span>
-                            <span class="text-[10px] opacity-60 font-light italic">(Formato PDF)</span>
-                        </div>
-                    </a>
-                </div>
-
             </div>
+        </div>
+
+        <section class="flex flex-col sm:flex-row justify-center gap-6 py-8 border-t border-slate-200">
+            <a href="audio_investigacion.m4a" target="_blank" class="flex-1 max-w-xs flex items-center justify-center px-6 py-4 bg-slate-900 text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-all border border-white/10 shadow-md">
+                <i class="fas fa-play-circle mr-3 text-blue-400 text-lg"></i> REPRODUCIR AUDIO
+            </a>
+
+            <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="flex-1 max-w-xs flex items-center justify-center px-6 py-4 bg-blue-700 text-white text-sm font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg">
+                <i class="fas fa-file-pdf mr-3 text-lg"></i> DESCARGAR PDF
+            </a>
         </section>
 
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-16 px-6 border-t border-white/5">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <div>
-                    <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Integrantes</h4>
-                    <p class="text-xs text-slate-300 uppercase tracking-tight opacity-70">Cristopher Elí Alvarez Lemus</p>
-                    <p class="text-xs text-slate-300 uppercase tracking-tight opacity-70">Gabriel Alberto Tax Citalán</p>
-                </div>
-                <div class="pt-6 border-t border-white/5">
-                    <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Institución</h4>
-                    <p class="text-md text-slate-300 font-bold italic">Universidad de San Carlos de Guatemala</p>
-                    <p class="text-xs uppercase tracking-tighter">Facultad de Ingeniería • Ingeniería Mecánica</p>
-                </div>
+    <footer class="bg-slate-900 text-white py-12 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center opacity-80 text-center md:text-left">
+            <div>
+                <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Institución</h4>
+                <p class="text-md font-bold italic">Universidad de San Carlos de Guatemala</p>
+                <p class="text-xs uppercase tracking-tighter">Facultad de Ingeniería • Ingeniería Mecánica</p>
             </div>
-
-            <div class="md:text-right flex flex-col justify-end">
-                <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Referencias Bibliográficas</h4>
-                <ul class="text-[9px] space-y-2 opacity-40 uppercase tracking-tighter">
-                    <li>Hibbeler, R. C. - Mecánica de Materiales (8va Ed.)</li>
-                    <li>Ortega Sánchez - Pandeo en Régimen No Lineal (2004)</li>
-                    <li>Beer & Johnston - Mecánica de Materiales (6ta Ed.)</li>
-                </ul>
+            <div class="md:text-right">
+                <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Ubicación</h4>
+                <p class="text-[9px] tracking-[0.5em] uppercase">Xela, Guatemala • 2026</p>
             </div>
-        </div>
-        <div class="text-center mt-12 opacity-10 text-[8px] tracking-[0.8em] uppercase">
-            Xela, Guatemala • 2026
         </div>
     </footer>
 
     <script>window.MathJax = { tex: { inlineMath: [['$', '$']] } };</script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </body>
 </html>
