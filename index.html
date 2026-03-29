@@ -12,6 +12,7 @@
         .eng-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
         .section-card { transition: all 0.3s ease; }
         .section-card:hover { border-color: #3b82f6; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        audio::-webkit-media-controls-panel { background-color: #f1f5f9; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -103,28 +104,20 @@
             </div>
         </section>
 
-        <section class="mb-20">
-            <div class="flex items-center mb-8 border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-widest text-blue-800">04. Conclusiones</h2>
-            </div>
-            <div class="grid lg:grid-cols-3 gap-4">
-                <div class="p-6 bg-slate-900 text-white rounded-xl">
-                    <p class="text-xs text-blue-400 mb-2 uppercase font-bold">Precisión Numérica</p>
-                    <p class="text-sm leading-relaxed opacity-80">El método de <strong>Splines Generalizados</strong> elimina errores de discretización, permitiendo soluciones exactas en los nodos.</p>
-                </div>
-                <div class="p-6 bg-white border border-slate-200 rounded-xl section-card">
-                    <p class="text-xs text-blue-800 mb-2 uppercase font-bold">Inestabilidad Geométrica</p>
-                    <p class="text-sm text-slate-600 leading-relaxed italic">El pandeo es un fenómeno de inestabilidad de la forma, independiente en muchos casos de la ruptura por resistencia.</p>
-                </div>
-                <div class="p-6 bg-white border border-slate-200 rounded-xl section-card">
-                    <p class="text-xs text-blue-800 mb-2 uppercase font-bold">Condiciones de Borde</p>
-                    <p class="text-sm text-slate-600 leading-relaxed italic">La longitud efectiva (factor $K$) es el parámetro que más influye en la seguridad estructural de una columna.</p>
-                </div>
+        <section class="mb-20 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm text-center">
+            <h2 class="text-sm font-bold mb-4 text-slate-500 uppercase tracking-[0.2em]">Resumen Auditivo de la Investigación</h2>
+            <div class="max-w-md mx-auto">
+                <audio controls class="w-full">
+                    <source src="audio_investigacion.mp3.m4a" type="audio/x-m4a">
+                    <source src="audio_investigacion.mp3.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el reproductor de audio.
+                </audio>
+                <p class="text-[10px] text-slate-400 mt-2 uppercase italic">Archivo: audio_investigacion.mp3.m4a</p>
             </div>
         </section>
 
         <section class="mb-20 bg-slate-100 rounded-3xl p-10 border border-slate-200">
-            <h2 class="text-xl font-black mb-8 text-slate-800 uppercase italic">05. Aplicación Práctica</h2>
+            <h2 class="text-xl font-black mb-8 text-slate-800 uppercase italic">04. Aplicación Práctica</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="text-sm space-y-2">
                     <p><strong>Configuración:</strong> Columna de acero $20 \times 50 \text{ mm}$, $L=1.0 \text{ m}$.</p>
@@ -139,11 +132,8 @@
         </section>
 
         <section class="flex flex-col sm:flex-row justify-center gap-6 py-12 border-t border-slate-200">
-            <a href="audio_investigacion.mp3.m4a" target="_blank" class="flex items-center justify-center px-8 py-4 bg-slate-900 text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-all border border-white/10">
-                <i class="fas fa-play-circle mr-3 text-blue-400"></i> ESCUCHAR RESUMEN AUDIO
-            </a>
             <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="flex items-center justify-center px-8 py-4 bg-blue-700 text-white text-sm font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg">
-                <i class="fas fa-file-pdf mr-3"></i> VER INVESTIGACIÓN PDF
+                <i class="fas fa-file-pdf mr-3"></i> DESCARGAR INVESTIGACIÓN COMPLETA (PDF)
             </a>
         </section>
 
