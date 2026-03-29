@@ -104,18 +104,6 @@
             </div>
         </section>
 
-        <section class="mb-20 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm text-center">
-            <h2 class="text-sm font-bold mb-4 text-slate-500 uppercase tracking-[0.2em]">Resumen Auditivo de la Investigación</h2>
-            <div class="max-w-md mx-auto">
-                <audio controls class="w-full">
-                    <source src="audio_investigacion.mp3.m4a" type="audio/x-m4a">
-                    <source src="audio_investigacion.mp3.m4a" type="audio/mpeg">
-                    Tu navegador no soporta el reproductor de audio.
-                </audio>
-                <p class="text-[10px] text-slate-400 mt-2 uppercase italic">Archivo: audio_investigacion.mp3.m4a</p>
-            </div>
-        </section>
-
         <section class="mb-20 bg-slate-100 rounded-3xl p-10 border border-slate-200">
             <h2 class="text-xl font-black mb-8 text-slate-800 uppercase italic">04. Aplicación Práctica</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -131,10 +119,30 @@
             </div>
         </section>
 
-        <section class="flex flex-col sm:flex-row justify-center gap-6 py-12 border-t border-slate-200">
-            <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="flex items-center justify-center px-8 py-4 bg-blue-700 text-white text-sm font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg">
-                <i class="fas fa-file-pdf mr-3"></i> DESCARGAR INVESTIGACIÓN COMPLETA (PDF)
-            </a>
+        <section class="mb-20">
+            <div class="flex flex-col md:flex-row gap-6 items-stretch">
+                
+                <div class="flex-1 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-center">
+                    <h2 class="text-[10px] font-bold mb-4 text-slate-500 uppercase tracking-[0.2em] text-center">Resumen Auditivo</h2>
+                    <audio controls class="w-full">
+                        <source src="audio_investigacion.mp3.m4a" type="audio/x-m4a">
+                        <source src="audio_investigacion.mp3.m4a" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                    <p class="text-[8px] text-slate-400 mt-2 text-center uppercase tracking-tighter italic">Archivo: audio_investigacion.mp3.m4a</p>
+                </div>
+
+                <div class="flex-1 flex items-stretch">
+                    <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="w-full flex items-center justify-center px-8 py-6 bg-blue-700 text-white text-sm font-bold rounded-3xl hover:bg-blue-600 transition-all shadow-lg group">
+                        <div class="text-center">
+                            <i class="fas fa-file-pdf mb-2 text-2xl group-hover:scale-110 transition-transform"></i>
+                            <span class="block uppercase tracking-wider">Descargar Investigación Completa</span>
+                            <span class="text-[10px] opacity-60 font-light italic">(Formato PDF)</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
     </main>
