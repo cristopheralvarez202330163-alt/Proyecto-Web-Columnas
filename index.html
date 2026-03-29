@@ -3,86 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estabilidad Estructural - Análisis de Columnas</title>
+    <title>Estabilidad y Equilibrio en Columnas - Ingeniería</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .eng-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-        .section-card { transition: all 0.3s ease; }
-        .section-card:hover { border-color: #3b82f6; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-    </style></head><body class="bg-slate-50 text-slate-900">
+        .engineering-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #334155 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
 
-    <header class="eng-gradient text-white py-16 px-6 text-center shadow-2xl">
+    <header class="engineering-gradient text-white py-20 px-6 text-center shadow-lg">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 italic">ESTABILIDAD Y EQUILIBRIO</h1>
-            <p class="text-blue-300 font-mono text-sm md:text-base tracking-widest uppercase">Investigación de Ingeniería Mecánica • USAC</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Estabilidad y Equilibrio en Columnas Esbeltas</h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 opacity-90">Análisis técnico del comportamiento estructural y pandeo elástico.</p>
+            <div class="inline-block bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                <p class="text-sm uppercase tracking-widest mb-2 font-semibold">Desarrollado por:</p>
+                <p class="text-lg">Cristopher Elí Alvarez Lemus & Gabriel Alberto Tax Citalán</p>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 -mt-10 pb-20">
+    <main class="max-w-6xl mx-auto px-6 py-12">
         
-        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border border-slate-200">
-            <h2 class="text-xl font-bold mb-6 flex items-center text-slate-800">
-                <span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">01</span>
-                RESUMEN DE AUDIO
-            </h2>
-            <div class="flex flex-col items-center">
-                <audio controls class="w-full max-w-2xl mb-4">
-                    <source src="audio_investigacion.m4a" type="audio/mp4">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <p class="text-[10px] text-slate-400 font-mono uppercase tracking-widest">Formato: NotebookLM Audio Pipeline</p>
+        <section class="mb-16">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-blue-700 mr-4"></div>
+                <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tighter">01. Introducción</h2>
             </div>
-        </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <div>
+                    <p class="mb-4 leading-relaxed">
+                        La <strong>estabilidad</strong> se define como la capacidad de una estructura para soportar una carga dada sin experimentar un cambio súbito en su configuración. En columnas esbeltas, esto se refiere específicamente a la resistencia contra la <strong>flexión lateral</strong> ante esfuerzos de compresión.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-700 mt-1 mr-2"></i> <span><strong>Equilibrio Estable:</strong> La carga axial es menor a la crítica ($P < P_{cr}$); la estructura recupera su forma.</span></li>
+                        <li class="flex items-start"><i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i> <span><strong>Equilibrio Neutro:</strong> El límite exacto donde $P = P_{cr}$.</span></li>
+                        <li class="flex items-start"><i class="fas fa-times-circle text-red-600 mt-1 mr-2"></i> <span><strong>Equilibrio Inestable:</strong> Carga superior a la crítica ($P > P_{cr}$); colapso por pandeo.</span></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-100 p-6 rounded-lg text-center border-dashed border-2 border-slate-300">
+                    <p class="text-sm text-slate-500 italic mb-4">Analogía del Equilibrio</p>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="p-2 bg-white rounded shadow-sm">Superficie Cóncava (Estable)</div>
+                        <div class="p-2 bg-white rounded shadow-sm">Superficie Plana (Neutra)</div>
+                        <div class="p-2 bg-white rounded shadow-sm">Superficie Convexa (Inestable)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="section-card bg-white rounded-2xl shadow-lg p-8 mb-12 border border-slate-200">
-            <h2 class="text-xl font-bold mb-8 italic text-slate-800 tracking-tight">04. APLICACIÓN PRÁCTICA</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8 items-center">
+        <section class="mb-16">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-blue-700 mr-4"></div>
+                <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tighter">02. Metodología Comparada</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-t-4 border-blue-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Fórmula de Euler (Columnas Largas)</h3>
+                    <p class="text-sm mb-4">Se utiliza para elementos con alta relación de esbeltez donde la falla es puramente elástica.</p>
+                    <div class="bg-slate-50 p-4 rounded text-center font-mono text-lg mb-4">
+                        $P_{cr} = \frac{\pi^2 EI}{L_e^2}$
+                    </div>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li>• Depende de la rigidez a la flexión (EI).</li>
+                        <li>• Inversamente proporcional al cuadrado de la longitud.</li>
+                        <li>• No influye la resistencia última del material en régimen elástico.</li>
+                    </ul>
+                </div>
+                <div class="bg-white border-t-4 border-slate-600 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">Método de J.B. Johnson (Intermedias)</h3>
+                    <p class="text-sm mb-4">Aproximación parabólica para columnas donde el pandeo es inelástico.</p>
+                    <div class="bg-slate-50 p-4 rounded text-center font-mono text-lg mb-4">
+                        $\sigma_{Lim} = \sigma_F [1 - \frac{\sigma_F \lambda^2}{4\pi^2 E}]$
+                    </div>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li>• Se aplica si la esbeltez real es menor a la constante $C_c$.</li>
+                        <li>• Considera la pérdida de linealidad del material.</li>
+                        <li>• Ideal para elementos de máquinas y puntales.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-blue-700 mr-4"></div>
+                <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tighter">03. Conclusiones Técnicas</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-blue-50 rounded-lg border border-blue-100 shadow-sm">
+                    <h4 class="font-bold text-blue-900 mb-2 italic">Precisión Nodal</h4>
+                    <p class="text-sm">El método de <strong>Splines Generalizados</strong> supera al MEF tradicional al usar soluciones de la ecuación diferencial, garantizando exactitud nodal absoluta.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-lg border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-2 italic">Segundo Orden</h4>
+                    <p class="text-sm">El diseño moderno exige análisis de segundo orden ($P-\Delta$), evaluando el equilibrio en la posición deformada para evitar fallas catastróficas.</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-lg border border-blue-100 shadow-sm">
+                    <h4 class="font-bold text-blue-900 mb-2 italic">No Linealidad</h4>
+                    <p class="text-sm">En hormigón, la pérdida de rigidez se debe principalmente a la <strong>fisuración</strong> (cracking), efecto que si se ignora, subestima las deformaciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-slate-900 text-white p-8 rounded-2xl shadow-2xl">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-blue-400 mr-4"></div>
+                <h2 class="text-3xl font-bold uppercase tracking-tighter">04. Ejercicio Práctico</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-4">
-                    <p class="text-slate-600 leading-relaxed">
-                        <strong class="text-slate-900">Configuración:</strong> Columna de acero $20 \times 50 \text{ mm}$, $L = 1.0 \text{ m}$.<br>
-                        <strong class="text-slate-900">Condiciones:</strong> Empotrada en ambos extremos ($K = 0.5$).
-                    </p>
-                    <p class="text-blue-600 font-semibold italic border-l-4 border-blue-600 pl-4">
-                        Resultado: Carga Permisible = 127.05 kN (F.S. 1.5)
-                    </p>
+                    <h3 class="text-xl font-semibold text-blue-300">Cálculo de Carga Crítica ($P_{cr}$)</h3>
+                    <p class="text-slate-400 text-sm italic">Caso: Columna de acero $20 \times 50$ mm, $L=1.0$ m, extremos empotrados ($K=0.5$).</p>
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10 space-y-2 text-sm">
+                        <p><strong>1. Propiedades:</strong> $E = 200$ GPa, $S_y = 250$ MPa.</p>
+                        <p><strong>2. Inercia ($I_{min}$):</strong> $33,333.33 \text{ mm}^4$.</p>
+                        <p><strong>3. Esbeltez ($\lambda$):</strong> $86.65$ (donde $L_e = 500$ mm).</p>
+                        <p><strong>4. Constante ($C_c$):</strong> $125.66$.</p>
+                    </div>
                 </div>
-                
-                <div class="bg-slate-900 rounded-xl p-8 text-center border-b-4 border-blue-500 shadow-inner">
-                    <span class="text-slate-400 text-[10px] uppercase tracking-[0.3em] block mb-2">Carga Crítica</span>
-                    <div class="text-white text-5xl font-black">190.58 kN</div>
+                <div class="flex flex-col justify-center items-center bg-blue-700/20 p-6 rounded-xl border border-blue-500/30">
+                    <span class="text-sm uppercase tracking-widest text-blue-300 mb-2 font-bold">Resultado Final</span>
+                    <span class="text-5xl font-mono font-bold text-white mb-2">127.05 kN</span>
+                    <p class="text-xs text-blue-200 text-center uppercase tracking-tighter">Carga permisible aplicando F.S. de 1.5</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <section class="flex flex-row justify-center gap-4 py-8 border-t border-slate-200">
-            <a href="audio_investigacion.m4a" target="_blank" class="flex-1 max-w-xs flex items-center justify-center px-6 py-4 bg-slate-900 text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-all border border-white/10 shadow-md">
-                <i class="fas fa-play-circle mr-3 text-blue-400 text-lg"></i> REPRODUCIR AUDIO
-            </a>
-
-            <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" target="_blank" class="flex-1 max-w-xs flex items-center justify-center px-6 py-4 bg-blue-700 text-white text-sm font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg">
-                <i class="fas fa-file-pdf mr-3 text-lg"></i> DESCARGAR PDF
-            </a>
+        <section class="mb-16 text-center">
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <i class="fas fa-file-pdf text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Material de Apoyo</h3>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="audio_investigacion.mp3.m4a" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center">
+                        <i class="fas fa-headphones mr-2"></i> Reproducir Audio NotebookLM
+                    </a>
+                    <a href="INVESTIGACIÓN SOBRE ESTABILIDAD Y EQUILIBRIO (1).pdf" download class="bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i> Descargar Investigación (PDF)
+                    </a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer class="bg-slate-900 text-white py-12 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center opacity-80 text-center md:text-left">
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             <div>
-                <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Institución</h4>
-                <p class="text-md font-bold italic">Universidad de San Carlos de Guatemala</p>
-                <p class="text-xs uppercase tracking-tighter">Facultad de Ingeniería • Ingeniería Mecánica</p>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest">Referencias Bibliográficas</h4>
+                <ul class="text-xs space-y-2 opacity-70">
+                    <li>[1] Hibbeler, R. C. (8va Ed.). Mecánica de Materiales.</li>
+                    <li>[2] Gere, J. M. & Goodno, B. J. (8va Ed.). Mecánica de Materiales.</li>
+                    <li>[3] Beer, F. P. & Johnston, E. R. (6ta Ed.). Mecánica de Materiales.</li>
+                    <li>[4] Ortega Sánchez, M. Á. (2004). Pandeo en régimen no lineal mediante splines.</li>
+                </ul>
             </div>
-            <div class="md:text-right">
-                <h4 class="text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Ubicación</h4>
-                <p class="text-[9px] tracking-[0.5em] uppercase">Xela, Guatemala • 2026</p>
+            <div class="text-right">
+                <p class="text-white font-bold mb-1 uppercase tracking-tight">Facultad de Ingeniería</p>
+                <p class="text-sm italic text-blue-300 mb-2">Universidad de San Carlos de Guatemala (USAC)</p>
+                <div class="text-xs space-y-1">
+                    <p>Cristopher Elí Alvarez Lemus</p>
+                    <p>Gabriel Alberto Tax Citalán</p>
+                </div>
+                <div class="flex justify-end space-x-4 mt-4">
+                    <i class="fab fa-github text-xl hover:text-white cursor-pointer transition-colors"></i>
+                    <i class="fas fa-university text-xl hover:text-white cursor-pointer transition-colors"></i>
+                </div>
             </div>
+        </div>
+        <div class="text-center mt-8 pt-8 border-t border-slate-800 text-[10px] uppercase tracking-widest">
+            © 2026 - Ingeniería Mecánica / Proyecto de Estabilidad Estructural
         </div>
     </footer>
 
-    <script>window.MathJax = { tex: { inlineMath: [['$', '$']] } };</script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></body></html>
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
